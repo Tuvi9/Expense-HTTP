@@ -16,7 +16,7 @@ const Expenses = (props) => {
     }
 
     const filteredExpenses = props.expenses.filter((expense) => {
-        return expense.date.getFullYear().toString() === filteredYear
+        return new Date(expense.date).getFullYear().toString() === filteredYear
     })
 
 
@@ -25,7 +25,7 @@ const Expenses = (props) => {
         <Card className='expense-items_border'>
           <ExpensesFilter selected={filteredYear} onChangeFilter={filterChangeHandler}
           ></ExpensesFilter>
-          <ExpensesList filteredExpenses={filteredExpenses}></ExpensesList>
+          <ExpensesList filteredExpenses={filteredExpenses} isLoading={props.isLoading}></ExpensesList>
     </Card>
     )
 }

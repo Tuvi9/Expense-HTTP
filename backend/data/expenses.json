@@ -1,0 +1,16 @@
+{"expenses":
+    [
+        {
+        "id": "e1",
+        "date": "2023-04-09T22:00:00.000Z",
+        "title":  "New book",
+        "amount": 29.99
+        },
+        {
+        "id": "e2",
+        "date": "2023-04-09T22:00:00.000Z",
+        "title":  "New jeans",
+        "amount": 39.99
+        }
+    ]
+}
